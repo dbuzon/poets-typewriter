@@ -71,6 +71,7 @@ body::-webkit-scrollbar-thumb {
 
 .verses {
     font-family: var(--secondary-font);
+    font-size: 1.125rem;
 }
 
 footer, a {
