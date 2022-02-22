@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --dark-color: #222326;
+    --muted-color: #7D838C;
+    --light-color: #EFF0F1;
+}
+
+body {
+    background-color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-color);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    padding: 1rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    transform: scaleX(-1);
+}
+
+.logo p {
+    font-weight: 700;
+    font-size: 1.75rem;
+    width: 10rem;
+    text-align: left;
+    
+}
+
+.poem {
+    margin: 2rem 2rem;
+}
+
+.header {    
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 1.33rem;
+}
+
+.verses {
+    font-family: 'Space Mono', monospace;
+}
+
+footer, a {
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+}
+
+a {    
+    transition: color ease 200ms;
+}
+
+a:hover {
+    color: var(--light-color);
+}
