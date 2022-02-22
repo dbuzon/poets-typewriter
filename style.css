@@ -37,17 +37,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     transform: scaleX(-1);
 }
 
 .logo p {
-    font-weight: 700;
-    font-size: 1.75rem;
-    width: 10rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    width: 9rem;
     text-align: left;
-    
 }
 
 .poem {
