@@ -8,11 +8,13 @@
     --dark-color: #222326;
     --muted-color: #7D838C;
     --light-color: #EFF0F1;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Space Mono', monospace;
 }
 
 body {
     background-color: var(--dark-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     color: var(--light-color);
     margin: 0 auto;
     text-align: center;
@@ -68,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .verses {
-    font-family: 'Space Mono', monospace;
+    font-family: var(--secondary-font);
 }
 
 footer, a {
