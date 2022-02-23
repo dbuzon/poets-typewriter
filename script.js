@@ -27,6 +27,17 @@ const addBreaks = (lines) => {
     return poem;
 }
 
+let index = 0;
+const typing = (poem, verses) => {    
+    setTimeout(() => {
+        if (index === poem.length) return;
+        if (poem[index] === '<') index += 2;
+        verses.innerHTML = poem.slice(0, index);
+        index++;
+        typing(poem, verses);
+    }, 90);     
+}
+
 getPoems()
     .then(titles => selectTitle(titles))
     .then(poem => {
@@ -35,6 +46,7 @@ getPoems()
         const author = document.getElementsByClassName("author")[0];
         author.innerHTML = poem.author;
         const verses = document.getElementsByClassName("verses")[0];
-        verses.innerHTML = addBreaks(poem.lines);
+        const lines = addBreaks(poem.lines);
+        typing(lines, verses);
     })
     .catch(err => console.log(err.message))
