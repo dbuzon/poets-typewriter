@@ -16,7 +16,9 @@ body {
     background-color: var(--dark-color);
     font-family: var(--primary-font);
     color: var(--light-color);
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -52,14 +54,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .poem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem 2rem;
 }
 
-.header {    
+.header {      
+    max-width: 700px;
     margin-bottom: 1.5rem;
 }
 
-.title {
+.title {    
     font-weight: 800;
     font-size: 2rem;
 }
