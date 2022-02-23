@@ -16,7 +16,8 @@ const selectTitle = async (titles) => {
         throw new Error('cannot fetch data');
     }
     const poem = await response.json();
-    return poem[0];
+    if (poem[0].length > 30) return selectTitle(titles);
+    else return poem[0];
 }
 
 const addBreaks = (lines) => {
