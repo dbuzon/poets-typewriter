@@ -39,12 +39,15 @@ const typing = (poem, verses) => {
     }, 90);     
 }
 
+const author = document.getElementsByClassName("author")[0];
+author.innerHTML = '<i class="fa-solid fa-scroll fa-2xl fa-fade"></i>'
+
 getPoems()
     .then(titles => selectTitle(titles))
     .then(poem => {
         const title = document.getElementsByClassName("title")[0];
         title.innerHTML = poem.title;
-        const author = document.getElementsByClassName("author")[0];
+        
         author.innerHTML = poem.author;
         const verses = document.getElementsByClassName("verses")[0];
         const lines = addBreaks(poem.lines);
