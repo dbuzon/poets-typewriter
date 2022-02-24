@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     gap: .5rem;
 }
 
-.logo img {
+.logo object {
     width: 3.5rem;
     height: 3.5rem;
     transform: scaleX(-1);
