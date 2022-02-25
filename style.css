@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem;
     display: flex; 
     justify-content: center; 
     align-items: flex-start;
