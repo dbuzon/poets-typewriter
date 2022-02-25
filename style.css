@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 
 footer, a {
     color: var(--muted-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 a {    
