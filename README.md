@@ -12,6 +12,4 @@ The site was made using Vanilla JavaScript and a lot of love ♡
 ## 📝 Notes
 I decided to select only short poems from the api, cause some of them were very long (more than a thousand lines!!) and I found it too tiring to wait for the site to type the whole thing.
 
-You can check the website here. 
-
-And if you are insterested in reading the longer poems as well, you can check all the [authors](https://poetrydb.org/authors) and [titles](https://poetrydb.org/titles) that PoetryDB has.
+You can check the website here.
