@@ -1,22 +1,25 @@
 const getPoems = async () => {
     const url = "https://poetrydb.org/title";
-    const response = await fetch(url);
+    const response = await fetch(url);    
     if (response.status !== 200) {
-        throw new Error('cannot fetch data');
+        throw new Error('Oops... Something went wrong :(');
     }
     const poems = await response.json();
+    if (poems.titles === undefined) {
+        throw new Error('Oops... Something went wrong :(');
+    }
     return poems.titles;
 }
 
 const selectTitle = async (titles) => {
     const title = titles[Math.floor(Math.random()*titles.length)];
     const url = "https://poetrydb.org/title/"+title;
-    const response = await fetch(url);
-    if (response.status !== 200) {
-        throw new Error('cannot fetch data');
+    const response = await fetch(url);    
+    if (response.status !== 200) {        
+        throw new Error('Oops... Something went wrong :(');        
     }
     const poem = await response.json();
-    if (poem[0].length > 30) return selectTitle(titles);
+    if (poem[0] === undefined || poem[0].lines.length > 42) return selectTitle(titles);
     else return poem[0];
 }
 
