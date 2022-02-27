@@ -12,4 +12,4 @@ The site was made using Vanilla JavaScript and a lot of love ♡
 ## 📝 Notes
 I decided to select only short poems from the api, cause some of them were very long (more than a thousand lines!!) and I found it too tiring to wait for the site to type the whole thing.
 
-You can check the website here.
+You can check the website [here](https://dbuzon.github.io/poets-typewriter/).
