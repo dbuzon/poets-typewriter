@@ -5,7 +5,7 @@
 </div>
 
 ## 🖋 About
-Poet's Typewriter is a simple website that showcases a random poem from [PoetryDB API](https://poetrydb.org/index.html) with a typing effect, as if the authors were typing it to you! The purpose of this project is to help people discover new poems an authors and to practice working with API's in JavaScript.
+Poet's Typewriter is a simple website that showcases a random poem from [PoetryDB API](https://poetrydb.org/index.html) with a typing effect, as if the authors were typing it to you! The purpose of this project is to help people discover new poems and to practice working with API's in JavaScript.
 
 The site was made using Vanilla JavaScript and a lot of love ♡
 
