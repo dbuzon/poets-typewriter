@@ -1,7 +1,7 @@
 <h1 align="center">Poet's Typewriter</h1>
 
 <div align="center">
-  <img src="https://imgur.com/sjXl5Jt.gif">
+  <img src="https://imgur.com/sjXl5Jt.gif" width="1000px">
 </div>
 
 ## 🖋 About
