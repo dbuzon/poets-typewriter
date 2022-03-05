@@ -19,7 +19,7 @@ const selectTitle = async (titles) => {
         throw new Error('Oops... Something went wrong :(');        
     }
     const poem = await response.json();
-    if (poem[0] === undefined || (poem[0].lines.length > 63 && poem[0].lines.length >= 4)) return selectTitle(titles);
+    if (poem[0] === undefined || (poem[0].lines.length > 42 && poem[0].lines.length >= 4)) return selectTitle(titles);
     else return poem[0];
 }
 
